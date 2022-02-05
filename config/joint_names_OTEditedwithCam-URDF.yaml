@@ -1,0 +1,36 @@
+
+joint_state_controller:
+  type: joint_state_controller/JointStateController
+  publish_rate: 50
+
+base-pipe1_position_controller:
+  type: effort_controllers/JointPositionController
+  joint: base-pipe1
+  pid: {p: 0.0, i: 0.0, d: 0.0}
+          
+
+fixedset1-pipe3_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: fixedset1-pipe3
+    pid: {p: 0.0, i: 0.0, d: 0.0}
+            
+
+fixedset2-pipe5_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: fixedset2-pipe5
+    pid: {p: 0.0, i: 0.0, d: 0.0}
+            
+
+motorholder-pinion_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: motorholder-pinion
+    pid: {p: 0.0, i: 0.0, d: 0.0}
+            
+
+gimbal-linkconnect_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: gimbal-linkconnect
+    pid: {p: 0.0, i: 0.0, d: 0.0}
+          
+
+  
